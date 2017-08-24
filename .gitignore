@@ -1,0 +1,25 @@
+# Created by .ignore support plugin (hsz.mobi)
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+### Node template
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+node_modules/
+
+# Optional eslint cache
+.eslintcache
+
+### macOS template
+# General
+*.DS_Store
+.AppleDouble
+.LSOverride
