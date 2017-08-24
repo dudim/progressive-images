@@ -16,7 +16,7 @@ Add css to project
 	transform: scale(1);
 }
 ```
-or include /src/progressive-load.css
+or include [/src/progressive-load.css](https://github.com/dudim/progressive-images/blob/master/src/progressive-load.css)
 ### html
 Different images depending on the screen resolution.
 ```html
@@ -84,7 +84,7 @@ const progresseiveLoadImages = new ProgressiveLoad({
 //ajax loaded images
 progresseiveLoadImages.update()
 ```
-or included  [public/global.min.js](https://github.com/dudim/progressive-images/blob/master/public/global.min.js)
+or included  [/public/global.min.js](https://github.com/dudim/progressive-images/blob/master/public/global.min.js)
 ```html
 <script src="https://github.com/dudim/progressive-images/blob/master/public/global.min.js"></script>
 <script>
