@@ -16,7 +16,18 @@ const progresseiveLoadImages = new ProgressiveLoad({
 //ajax loaded images
 progresseiveLoadImages.update()
 ```
+### css
+```
+.progressive-img {
+	filter: blur(15px);
+	transform: scale(1.05);
+}
 
+.progressive-img-state-loaded {
+	filter: none;
+	transform: scale(1);
+}
+```
 ### html
 Different images depending on the screen resolution.
 ```
