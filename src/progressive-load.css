@@ -1,0 +1,9 @@
+.progressive-img {
+	filter: blur(15px);
+	transform: scale(1.05);
+}
+
+.progressive-img-state-loaded {
+	filter: none;
+	transform: scale(1);
+}

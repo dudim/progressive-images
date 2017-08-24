@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adaptive progressive image loadind - Base example</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="../../src/progressive-load.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="row">
+      <div class="cell">
+          <picture class="js-progressive-img">
+              <!-- tablet image -->
+              <source
+                  media="(min-width: 600px) and (max-width: 768px)"
+                  srcset="/assets/images/1-tablet-thumbnail.jpg"
+                  data-srcset="/assets/images/1-tablet.jpg"
+              >
+              <!-- phone image -->
+              <source
+                  media="(max-width: 600px)"
+                  srcset="/assets/images/1-mobile-thumbnail.jpg"
+                  data-srcset="/assets/images/1-mobile.jpg"
+              >
+              <!-- desctop image -->
+              <img
+                  src="/assets/images/1-thumbnail.jpg"
+                  data-srcset="/assets/images/1.jpg"
+                  class="progressive-img"
+              >
+          </picture>
+      </div>
+
+      <div class="cell">
+          <picture class="js-progressive-img">
+              <!-- phone image -->
+              <source
+                  media="(max-width: 600px)"
+                  srcset="/assets/images/2-mobile-thumbnail.jpg"
+                  data-srcset="/assets/images/2-mobile.jpg"
+              >
+              <!-- desctop image -->
+              <img
+                  src="/assets/images/2-thumbnail.jpg"
+                  data-srcset="/assets/images/2.jpg"
+                  class="progressive-img"
+              >
+          </picture>
+      </div>
+
+      <div class="cell">
+          <picture class="js-progressive-img">
+              <!-- desctop image -->
+              <img
+                  src="/assets/images/3-thumbnail.jpg"
+                  data-srcset="/assets/images/3.jpg"
+                  class="progressive-img"
+              >
+          </picture>
+      </div>
+  </div>
+
+  <script src="../../public/index.min.js"></script>
+
+</body>
+</html>
