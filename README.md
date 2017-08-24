@@ -1,4 +1,7 @@
 #  Progressive uploading images to Vanilla Js.
+
+![Effect](https://github.com/dudim/progressive-images/blob/master/assets/images/effect.png)
+
 ## Use as a module
 ### js
 ```
