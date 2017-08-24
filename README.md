@@ -2,22 +2,10 @@
 
 ![Effect](https://github.com/dudim/progressive-images/blob/master/assets/images/effect.png)
 
-## Use as a module
-### js
-```
-import ProgressiveLoad from 'progressive-load';
-const progresseiveLoadImages = new ProgressiveLoad({
-    pictureTagClassName: 'js-progressive-img',
-    pictureLoadedClassName: 'progressive-img-state-loaded',
-    mediaQueries: ['(max-width: 600px)', '(min-width: 600px) and (max-width: 768px)'],
-    fullImageDataAttribute: 'srcset',
-});
 
-//ajax loaded images
-progresseiveLoadImages.update()
-```
 ### css
-```
+Add css to project
+```css
 .progressive-img {
 	filter: blur(15px);
 	transform: scale(1.05);
@@ -28,9 +16,10 @@ progresseiveLoadImages.update()
 	transform: scale(1);
 }
 ```
+or include /src/progressive-load.css
 ### html
 Different images depending on the screen resolution.
-```
+```html
 <picture class="js-progressive-img">
       <!-- tablet image -->
       <source
@@ -53,7 +42,7 @@ Different images depending on the screen resolution.
   </picture>
 ```
 Images for mobile version and desktop.
-```
+```html
 <picture class="js-progressive-img">
   <!-- phone image -->
   <source
@@ -70,7 +59,7 @@ Images for mobile version and desktop.
 </picture>
 ```
 One image for all resolutions.
-```
+```html
 <picture class="js-progressive-img">
   <img
       src="/assets/images/3-thumbnail.jpg"
@@ -78,4 +67,35 @@ One image for all resolutions.
       class="progressive-img"
   >
 </picture>
+```
+
+### js
+as a module
+```js
+import ProgressiveLoad from 'progressive-load';
+
+const progresseiveLoadImages = new ProgressiveLoad({
+    pictureTagClassName: 'js-progressive-img',
+    pictureLoadedClassName: 'progressive-img-state-loaded',
+    mediaQueries: ['(max-width: 600px)', '(min-width: 600px) and (max-width: 768px)'],
+    fullImageDataAttribute: 'srcset',
+});
+
+//ajax loaded images
+progresseiveLoadImages.update()
+```
+or included  [public/global.min.js](https://github.com/dudim/progressive-images/blob/master/public/global.min.js)
+```html
+<script src="https://github.com/dudim/progressive-images/blob/master/public/global.min.js"></script>
+<script>
+var progresseiveLoadImages = new ProgressiveLoad({
+    pictureTagClassName: 'js-progressive-img',
+    pictureLoadedClassName: 'progressive-img-state-loaded',
+    mediaQueries: ['(max-width: 600px)', '(min-width: 600px) and (max-width: 768px)'],
+    fullImageDataAttribute: 'srcset',
+});
+
+//ajax loaded images
+progresseiveLoadImages.update()
+</script>
 ```

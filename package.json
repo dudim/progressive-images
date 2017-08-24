@@ -1,6 +1,6 @@
 {
   "name": "progressive-images",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Progressive images on Vanila js",
   "main": "/src/progressive-load.js",
   "scripts": {
@@ -9,7 +9,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dmitry Dubsky",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dudim/progressive-images.git"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",

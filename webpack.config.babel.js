@@ -5,10 +5,13 @@ const isDebug = process.env.NODE_ENV !== 'production';
 
 const webpackConfig = {
 	context: __dirname,
-	entry: './index.js',
+	entry: {
+		example: './src/example',
+		global: './src/global',
+	},
 	output: {
 		path: path.resolve(__dirname, 'public/'),
-		filename: 'index.min.js',
+		filename: '[name].min.js',
 	},
 	module: {
 		rules: [
