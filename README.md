@@ -9,6 +9,7 @@ Add css to project
 .progressive-img {
 	filter: blur(15px);
 	transform: scale(1.05);
+    width: 100%;
 }
 
 .progressive-img-state-loaded {
@@ -84,15 +85,15 @@ const progresseiveLoadImages = new ProgressiveLoad({
 //ajax loaded images
 progresseiveLoadImages.update()
 ```
-or included  [/public/global.min.js](https://github.com/dudim/progressive-images/blob/master/public/global.min.js)
+or donwload [/public/global.min.js](https://github.com/dudim/progressive-images/blob/master/public/global.min.js) and included in html
 ```html
-<script src="https://github.com/dudim/progressive-images/blob/master/public/global.min.js"></script>
+<script src="global.min.js"></script>
 <script>
 var progresseiveLoadImages = new ProgressiveLoad({
     pictureTagClassName: 'js-progressive-img',
     pictureLoadedClassName: 'progressive-img-state-loaded',
     mediaQueries: ['(max-width: 600px)', '(min-width: 600px) and (max-width: 768px)'],
-    fullImageDataAttribute: 'srcset',
+    fullImageDataAttribute: 'srcset'
 });
 
 //ajax loaded images
