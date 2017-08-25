@@ -7,14 +7,14 @@
 Add css to project
 ```css
 .progressive-img {
-	filter: blur(15px);
-	transform: scale(1.05);
+    filter: blur(15px);
+    transform: scale(1.05);
     width: 100%;
 }
 
 .progressive-img-state-loaded {
-	filter: none;
-	transform: scale(1);
+    filter: none;
+    transform: scale(1);
 }
 ```
 or include [/src/progressive-load.css](https://github.com/dudim/progressive-images/blob/master/src/progressive-load.css)
