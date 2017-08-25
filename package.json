@@ -1,7 +1,7 @@
 {
   "name": "progressive-images",
   "version": "1.0.3",
-  "description": "Progressive images on Vanila js",
+  "description": "Progressive images on Vanilla js",
   "main": "/src/progressive-load.js",
   "scripts": {
     "build": "webpack",
